@@ -1,0 +1,15 @@
+/target
+/pkg
+/dist
+.trunk/
+
+*.wasm
+*.sqlite
+*.db
+recipes.db
+
+.DS_Store
+venv/
+__pycache__/
+*.pyc
+

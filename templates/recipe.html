@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+    {% for ingredient in ingredients %}
+        <li>{{ ingredient }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Instructions:</h2>
+    <p>{{ instructions }}</p>
+
+    <div class="center">
+        <form method="get" action="/">
+            <button type="submit">🔄 More recipes</button>
+        </form>
+    </div>
+</body>
+</html>
+

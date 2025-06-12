@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe List</title>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>
+                <strong>{{ recipe.title }}</strong><br/>
+                {{ recipe.description }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Add Recipe</h2>
+    <form action="/recipes" method="post">
+        <input name="title" placeholder="Title" required /><br/>
+        <textarea name="description" placeholder="Description"></textarea><br/>
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>
+
