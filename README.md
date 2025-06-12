@@ -4,7 +4,7 @@
 **Project Type:** Recipe Web Service  
 **Tech Stack:** Rust, Axum, SQLite, SQLx, Askama, Utoipa, Yew  
 
-## 📋 Project Summary
+## Project Summary
 
 This project is a full-stack web application for managing and viewing recipes. It consists of:
 
@@ -14,7 +14,7 @@ This project is a full-stack web application for managing and viewing recipes. I
 - A frontend client built with **Yew** (compiled to WebAssembly).
 - Docker and Trunk used for bundling and serving the application.
 
-## 🧱 Folder Structure
+## Folder Structure
 
 ```
 final-recipe-project/
@@ -32,7 +32,7 @@ final-recipe-project/
 └── README.md              # This file
 ```
 
-## 🚀 How to Run
+##  How to Run
 
 1. Start the backend:
    ```bash
