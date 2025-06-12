@@ -34,6 +34,16 @@ final-recipe-project/
 
 ##  How to Run
 
+
+### Prerequisites
+
+- Install Rust: https://www.rust-lang.org/tools/install
+- Install Trunk:  
+  ```bash
+  cargo install trunk
+- Install the WASM target for Rust:
+  rustup target add wasm32-unknown-unknown
+
 1. Start the backend:
    ```bash
    cargo run
@@ -41,6 +51,7 @@ final-recipe-project/
 
 2. In a separate terminal, start the frontend client:
    ```bash
+   cd yew-client
    trunk serve --proxy-backend=/api=http://127.0.0.1:3000 --open
    ```
 ## Challenges Encountered
